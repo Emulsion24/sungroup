@@ -277,73 +277,48 @@ const Index = () => {
 
 
       {/* Video Section */}
-      <section className="py-16 sm:py-24 md:py-32 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-transparent" />
-        
-        <div className="container mx-auto relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-10 sm:mb-16"
-          >
-            <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 font-playfair px-4">
-              Watch Our <span className="bg-gradient-to-r from-amber-400 to-orange-600 text-transparent bg-clip-text">Virtual Tour</span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-inter font-light px-4">
-              Explore every corner of luxury in our immersive video presentation
-            </p>
-          </motion.div>
+    <section className="py-16 sm:py-24 md:py-32 px-4 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-transparent" />
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative max-w-6xl mx-auto"
-          >
-            <div className="relative aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-amber-500/20 border border-amber-500/30">
-              {!isVideoPlaying ? (
-                <div className="relative w-full h-full group cursor-pointer" onClick={() => setIsVideoPlaying(true)}>
-                  <img 
-                    src={buildingExterior}
-                    alt="Video thumbnail"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-                  
-                  <motion.div
-                    className="absolute inset-0 flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-amber-500 rounded-full blur-2xl opacity-50 group-hover:opacity-75 transition-opacity animate-pulse" />
-                      <div className="relative w-20 h-20 sm:w-28 sm:h-28 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center shadow-2xl">
-                        <Play className="w-8 h-8 sm:w-12 sm:h-12 text-white ml-1 sm:ml-2" fill="white" />
-                      </div>
-                    </div>
-                  </motion.div>
+  <div className="container mx-auto relative z-10">
+    {/* Heading */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-10 sm:mb-16"
+    >
+      <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 font-playfair px-4">
+        Watch Our <span className="bg-gradient-to-r from-amber-400 to-orange-600 text-transparent bg-clip-text">Virtual Tour</span>
+      </h2>
+      <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-inter font-light px-4">
+        Explore every corner of luxury in our immersive video presentation
+      </p>
+    </motion.div>
 
-                  <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 text-white">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 sm:mb-2 font-cormorant">Sun Ashraya Virtual Walkthrough</h3>
-                    <p className="text-sm sm:text-base text-slate-200 font-inter">Click to experience luxury living</p>
-                  </div>
-                </div>
-              ) : (
-                <div className="w-full h-full bg-slate-900 flex items-center justify-center">
-                  <div className="text-center px-4">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-                    <p className="text-slate-400 font-inter text-sm sm:text-base">Your video would load here</p>
-                    <p className="text-slate-500 text-xs sm:text-sm mt-2 font-inter">Replace with your video URL</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    {/* Video Container */}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative max-w-6xl mx-auto"
+    >
+      <div className="relative aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-amber-500/20 border border-amber-500/30">
+        <video
+          src="/src/assets/demo.mp4"
+          className="w-full h-full object-cover rounded-2xl sm:rounded-3xl"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      </div>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-16 sm:py-24 md:py-32 px-4 relative">
