@@ -391,7 +391,7 @@ const Index = () => {
     </motion.div>
 
     {/* Image Gallery */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 px-2 sm:px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6 px-2 sm:px-4">
       {[
         Photo1, Photo2, Photo3, Photo4, Photo5, Photo6, Photo7, Photo8, 
         Photo9, Photo10, Photo11, Photo12, Photo13, Photo14, Photo15
