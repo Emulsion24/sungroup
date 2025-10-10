@@ -1,7 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Phone, Download } from "lucide-react";
 import buildingExterior from "@/assets/building-exterior.jpg";
-import logo from "@/assets/logo.png"; // ✅ Add your logo image here
+import logo from "@/assets/logo.png";
+import brochure from"@/assets/SUN ASHRAYA BROCHURE.pdf" // ✅ Add your logo image here
 
 export default function HeroSection() {
   // Example scroll animation logic
@@ -14,7 +15,7 @@ export default function HeroSection() {
   };
 
   const handleBrochure = () => {
-    window.open("/brochure.pdf", "_blank"); // 📄 Replace with your brochure path
+    window.open(brochure, "_blank"); // 📄 Replace with your brochure path
   };
 
   return (
