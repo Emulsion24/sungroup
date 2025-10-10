@@ -9,7 +9,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.7]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.05]);
 
-  const handleCall = () => window.location.href = "tel:+911234567890";
+  const handleCall = () => window.location.href = "tel:9230997919";
   const handleBrochure = () => window.open(brochure, "_blank");
 
   return (

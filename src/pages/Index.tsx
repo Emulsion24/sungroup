@@ -123,10 +123,9 @@ const ImageGallery = ({ images }) => {
 };
 
 const Index = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+ 
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
+  
 
   const handleVisit = () => {
     window.open(
