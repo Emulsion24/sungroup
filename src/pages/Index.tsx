@@ -19,7 +19,7 @@ import buildingExterior from "@/assets/building-exterior.jpg";
 import broucherPdf from "@/assets/SUN ASHRAYA BROCHURE.pdf";
 import GroundFloor from "@/assets/groundfloor.png";
 import UpperFloor from"@/assets/1 and 3rd floor.png";
-
+import demoVideo from "@/assets/demo.mp4"
 import Photo15 from "@/assets/15.jpg"
 import Photo14 from "@/assets/14.jpg"
 import Photo1 from "@/assets/1.jpg"
@@ -307,7 +307,7 @@ const Index = () => {
     >
       <div className="relative aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-amber-500/20 border border-amber-500/30">
         <video
-          src="/src/assets/demo.mp4"
+          src={demoVideo}
           className="w-full h-full object-cover rounded-2xl sm:rounded-3xl"
           autoPlay
           loop
