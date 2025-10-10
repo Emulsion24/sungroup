@@ -61,7 +61,7 @@ export default function HeroSection() {
               className="inline-block mb-6 px-6 py-2 bg-amber-500/20 backdrop-blur-sm border border-amber-500/50 rounded-full"
             >
               <span className="text-amber-400 font-inter font-medium tracking-wider text-sm uppercase">
-                Sun Privar
+                Sun Privar Presents
               </span>
             </motion.div>
 
