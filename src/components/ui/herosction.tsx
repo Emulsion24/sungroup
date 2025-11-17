@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Phone, Download } from "lucide-react";
-import buildingExterior from "@/assets/building-exterior.jpg";
-import logo from "@/assets/logo.png";
+import buildingExterior from "@/assets/ELEVATION.jpeg";
+import logo from "@/assets/sungroup-logo.png";
 import brochure from "@/assets/SUN ASHRAYA BROCHURE.pdf";
 
 export default function HeroSection() {
@@ -9,7 +9,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.7]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.05]);
 
-  const handleCall = () => window.location.href = "tel:9230997919";
+  const handleCall = () => window.location.href = "tel:8334061234";
   const handleBrochure = () => window.open(brochure, "_blank");
 
   return (
@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="absolute top-4 sm:top-6 left-4 sm:left-6 z-20">
         <img
           src={logo}
-          alt="Sun Privar Logo"
+          alt="Sun Group Logo"
           className="w-20 sm:w-28 h-auto object-contain drop-shadow-lg"
         />
       </div>
@@ -55,18 +55,24 @@ export default function HeroSection() {
               className="inline-block mb-4 sm:mb-6 px-4 sm:px-6 py-1 sm:py-2 bg-amber-500/20 backdrop-blur-sm border border-amber-500/50 rounded-full"
             >
               <span className="text-amber-400 font-inter font-medium tracking-wider text-xs sm:text-sm uppercase">
-                Sun Privar Presents
+                SUN GROUP Presents
               </span>
             </motion.div>
+            <div className="mt-2 sm:mt-3">
+  <span className="text-[10px] sm:text-xs text-slate-300 font-extrabold font-inter tracking-wide bg-white/10 px-3 py-1 rounded-full border border-white/20">
+    WBRERA/P/NOR/2025/002819
+  </span>
+</div>
+
 
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight font-playfair">
               <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-orange-500 text-transparent bg-clip-text drop-shadow-2xl">
-                Sun Ashraya
+                SUN GRAND BASUMATI
               </span>
             </h1>
 
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-light mb-6 sm:mb-8 text-white font-mono tracking-wide">
-              Discover Elegant <span className="italic font-normal">1 & 2 BHK</span> Residences
+             Discover elegant<span className="italic font-normal"> 2 & 3 BHK  </span> luxury residences 
             </h2>
           </motion.div>
 
@@ -76,9 +82,8 @@ export default function HeroSection() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-200 mb-8 sm:mb-12 font-inter font-light leading-relaxed max-w-3xl mx-auto"
           >
-            Nestled in the heart of <span className="font-semibold text-amber-400">Baghajatin</span>, 
-            Sun Privar blends timeless architecture with modern comfort. 
-            Enjoy premium living spaces designed to elevate your lifestyle.
+            A G+7 premium landmark by Sun Group. <span className="font-semibold text-amber-400">Chingrighata</span>, 
+            The project blends timeless architecture with modern sophistication, offering spacious layouts, refined interiors, and thoughtfully designed amenities. Every detail is crafted to elevate your lifestyle and deliver unmatched comfort, style, and convenience.
           </motion.p>
 
           <motion.div
