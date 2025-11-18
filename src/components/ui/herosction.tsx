@@ -2,7 +2,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Phone, Download } from "lucide-react";
 import buildingExterior from "@/assets/ELEVATION.jpeg";
 import logo from "@/assets/sungroup-logo.png";
-import brochure from "@/assets/SUN ASHRAYA BROCHURE.pdf";
 
 export default function HeroSection() {
   const { scrollYProgress } = useScroll();
@@ -10,7 +9,7 @@ export default function HeroSection() {
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.05]);
 
   const handleCall = () => window.location.href = "tel:8334061234";
-  const handleBrochure = () => window.open(brochure, "_blank");
+  const handleBrochure = () => window.open( "_blank");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6">
